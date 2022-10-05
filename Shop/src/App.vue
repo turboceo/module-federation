@@ -1,12 +1,19 @@
 <template>
     <div>
-        <h1>Our Application Homepage</h1>
+        <Header></Header>
+        <h1>Our Application Shoppage</h1>
     </div>
 </template>
 
 <script>
+import Header from 'Company/Header'
+
 export default {
-    name: "App"
+    name: "App",
+
+    components: {
+        Header
+    }
 }
 </script>
 

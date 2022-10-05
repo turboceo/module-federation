@@ -42,7 +42,9 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "Shop",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        Company: "Company@http://localhost:8080/remoteEntry.js"
+      },
       exposes: {},
       shared: require("./package.json").dependencies,
     }),
