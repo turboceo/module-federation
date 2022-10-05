@@ -40,7 +40,7 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
     new ModuleFederationPlugin({
-      name: "Company",
+      name: "Shop",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {},
