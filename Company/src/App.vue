@@ -13,6 +13,11 @@ export default {
 
     components: {
         Header,
+    },
+
+    created() {
+        console.log('created...')
+        console.log(this.$store)
     }
 }
 </script>
