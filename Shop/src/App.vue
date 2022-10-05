@@ -1,23 +1,31 @@
 <template>
+  <div>
+    <Header></Header>
+    <h1>Our Application Shoppage</h1>
     <div>
-        <Header></Header>
-        <h1>Our Application Shoppage</h1>
+        <button @click="addItem">Add item</button>
     </div>
+  </div>
 </template>
 
 <script>
-import Header from 'Company/Header'
+import Header from "Company/Header";
 
 export default {
-    name: "App",
+  name: "App",
 
-    components: {
-        Header
-    }
-}
+  components: {
+    Header,
+  },
+
+  methods: {
+    addItem() {
+      this.$store.state.cartItems += 1;
+    },
+  },
+};
 </script>
 
 <style scoped>
-
 </style>
 

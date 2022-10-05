@@ -1,10 +1,22 @@
 <template>
  <div>
   <header class="header">
-   App Header
+   App Header | Items: {{ cartCount }}
   </header>
  </div>
 </template>
+
+<script>
+export default {
+    name: "Header",
+
+    computed: {
+        cartCount() {
+            return this.$store.state.cartItems
+        }
+    }
+}
+</script>
 
 <style scoped>
 .header {
