@@ -20,7 +20,7 @@ export default {
 
   methods: {
     addItem() {
-      this.$store.state.cartItems += 1;
+      this.$store.commit('updateCartItems')
     },
   },
 };

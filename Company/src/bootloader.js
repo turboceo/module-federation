@@ -2,16 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import "./index.css";
 
-import Vuex from "vuex";
-Vue.use(Vuex);
-
-const store = new Vuex.Store({
- state () {
-  return {
-   cartItems: 0
-  }
- }
-})
+import store from './store'
 
 Vue.config.productionTip = false;
 
